@@ -1,0 +1,20 @@
+int ft_recursive_factorial(int nb)
+{
+    if (nb < 0 || nb >= 14)
+        return (0);
+    if (nb <= 1)
+        return (1);
+    else
+        return (nb * ft_recursive_factorial(nb - 1));
+}
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    printf("La factorielle de 5 : %d\n", ft_recursive_factorial(5));
+    printf("La factorielle de 7 : %d\n", ft_recursive_factorial(7));
+    printf("La factorielle de 10 : %d\n", ft_recursive_factorial(10));
+    printf("La factorielle de 32 : %d\n", ft_recursive_factorial(32));
+    return (0);
+}*/
