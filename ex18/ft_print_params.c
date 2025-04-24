@@ -6,13 +6,13 @@
 /*   By: vafavard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 14:49:44 by vafavard          #+#    #+#             */
-/*   Updated: 2025/04/24 17:15:38 by vafavard         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:59:19 by vafavard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar(char c);
+void	ft_putchar(char c);
 
 int	main(int argc, char **argv)
 {

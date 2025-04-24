@@ -6,13 +6,13 @@
 /*   By: vafavard <vafavard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 14:56:55 by vafavard          #+#    #+#             */
-/*   Updated: 2025/04/24 17:18:34 by vafavard         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:59:41 by vafavard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar(char c);
+void	ft_putchar(char c);
 
 int	ft_strcmp(char *s1, char *s2)
 {
