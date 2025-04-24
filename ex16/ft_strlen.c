@@ -1,38 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vafavard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:49:44 by vafavard          #+#    #+#             */
-/*   Updated: 2025/04/24 17:15:38 by vafavard         ###   ########.fr       */
+/*   Created: 2025/04/22 14:43:22 by vafavard          #+#    #+#             */
+/*   Updated: 2025/04/22 15:53:09 by vafavard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void    ft_putchar(char c);
-
-int	main(int argc, char **argv)
+int	ft_strlen(char *str)
 {
 	int	i;
-	int	j;
 
-	i = 1;
-	if (argc > 1)
-	{
-		while (i < argc)
-		{
-			j = 0;
-			while (argv[i][j])
-			{
-				ft_putchar(argv[i][j]);
-				j++;
-			}
-			i++;
-			ft_putchar('\n');
-		}
-	}
-	return (0);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

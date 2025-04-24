@@ -1,38 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vafavard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 14:49:44 by vafavard          #+#    #+#             */
-/*   Updated: 2025/04/24 17:15:38 by vafavard         ###   ########.fr       */
+/*   Created: 2025/04/22 13:25:55 by vafavard          #+#    #+#             */
+/*   Updated: 2025/04/22 15:49:21 by vafavard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void    ft_putchar(char c);
-
-int	main(int argc, char **argv)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
-	int	j;
+	int	c;
 
-	i = 1;
-	if (argc > 1)
-	{
-		while (i < argc)
-		{
-			j = 0;
-			while (argv[i][j])
-			{
-				ft_putchar(argv[i][j]);
-				j++;
-			}
-			i++;
-			ft_putchar('\n');
-		}
-	}
-	return (0);
+	c = *a;
+	*a = *b;
+	*b = c;
 }
