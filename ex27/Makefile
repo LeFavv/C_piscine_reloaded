@@ -7,7 +7,6 @@ ${NAME} : ${SRC}
 		cc -Wall -Werror -Wextra $^ -o $@
 
 clean :
-		@echo "Nothing to clean"
 
 fclean : clean
 		rm -rf ${NAME}
